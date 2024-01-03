@@ -1,1 +1,108 @@
+a. 
+Configure git comments ; 
+git config --global user.name "erdemonal11"
+git config --global user.email "21comp1013@isik.edu.tr"
+git config --global core.editor "visualstudiocode"
+Verify git configuration: git config --global --list
+
+b. 
+Cloning repository: git clone https://github.com/erdemonal11/Soft2101-task.git
+List contents of the parent directory: ls
+Navigating to cloned repository: cd Soft2101-task
+List contents of the .git directory: ls -a .git
+Files and directories in local .git directory; 
+./   HEAD    description  index  logs/     packed-refs
+../  config  hooks/       info/  objects/  refs/
+
+c. 
+Editing README.md: nano README.md
+# This repository is dedicated to SOFT2101 course
+
+[The Department of Software Engineering of Işık University](https://www.isikun.edu.tr/akademik/muhendislik-fakultesi/bolumler-ve-programlar/bilgisayar-muhendisligi/programlar/lisans-programi/yazilim-muhendisligi)
+
+Commit change;
+git add README.md
+git commit -m "Update README "
+git push
+
+d.
+Create .gitignore;
+# .gitignore
+
+# Compiled class files
+*.class
+
+# Compiled Java bytecode
+*.jar
+
+# Compiled Java source files
+*.class
+
+# IntelliJ IDEA files
+.idea/
+
+Commit .gitignore;
+git add .gitignore
+git commit -m "setting up gitignore"
+git push
+
+Verify commit: git log
+
+e.
+Create and switch to feature-1 branch: git checkout -b feature-1
+Move into the hmk1 directory: cd hmk1
+
+f.
+Navigate to project root: cd C:\Users\mrifk\Documents\NetBeansProjects\soft2101
+Add files in src/soft2101 : git add .
+Committing changes: git commit -m "satisfying requirement one"
+Push changes: git push origin feature-1
+feature-1, README.md and hwk4 is in this branch.
+
+j.
+Switch to feature-2: git checkout feature-2
+Commit changes: git add Soft2101.java
+git commit -m "satisfying requirement change two"
+View commits: git log --oneline
+
+k.
+Switch to feature-3: git checkout feature-3
+Commit changes: git add Soft2101.java
+git commit -m "satisfying requirement change two"
+View commits: git log --oneline
+
+m.
+Finding difference between main and feature-1: git diff main..feature-1
+diff --git a/Soft2101.java b/Soft2101.java
+index abcdef1..1234567 100644
+--- a/Soft2101.java
++++ b/Soft2101.java
+@@ -12,7 +12,7 @@ public class Soft2101 {
+        if (i % 2 != 0)
+     }
+ }
+-}
+\ No newline at end of file
++}
+\ No newline at end of file
+
+Finding difference between main and feature-2: git diff main..feature-2
+diff --git a/NumberRangePrinter.java b/NumberRangePrinter.java
+index abcdef1..1234567 100644
+--- a/Soft2101.java
++++ b/Soft2101.java
+@@ -12,7 +12,7 @@ public class Soft2101 {
+         if (i % 2 == 0)
+     }
+ }
+-}
+\ No newline at end of file
++}
+\ No newline at end of file
+
+Finding difference between main and feature-3: git diff main..feature-3
+After merging feature-2 first and feature-3 after then main is same as feature-3
+
+
+
 
