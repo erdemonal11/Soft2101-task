@@ -1,1 +1,1 @@
-# This is the repository for Erdem Önal
+# This repository is dedicated to SOFT2101 course
