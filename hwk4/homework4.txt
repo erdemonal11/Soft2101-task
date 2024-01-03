@@ -57,6 +57,7 @@ Navigate to project root: cd C:\Users\mrifk\Documents\NetBeansProjects\soft2101
 Add files in src/soft2101 : git add .
 Committing changes: git commit -m "satisfying requirement one"
 Push changes: git push origin feature-1
+feature-1, README.md and hwk4 is in this branch.
 
 j.
 Switch to feature-2: git checkout feature-2
