@@ -16,10 +16,16 @@ public class Soft2101 {
 
         scanner.close();
 
+
         
         if (firstNumber < secondNumber) {
             for (int i = firstNumber + 1; i < secondNumber; i++) {
                 if (i % 2 == 0) {
+
+        if (firstNumber < secondNumber) {
+            for (int i = firstNumber + 1; i < secondNumber; i++) {
+                if (i % 2 != 0) {
+
                     System.out.println(i);
                 }
             }
@@ -28,7 +34,6 @@ public class Soft2101 {
         }
     }
 }
-
 
     
 
