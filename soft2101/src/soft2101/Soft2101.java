@@ -6,7 +6,7 @@ public class Soft2101 {
 
     public static void main(String[] args) {
 
-        Scanner scanner = new Scanner(System.in);
+       Scanner scanner = new Scanner(System.in);
 
         System.out.print("Enter the first number: ");
         int firstNumber = scanner.nextInt();
@@ -16,10 +16,12 @@ public class Soft2101 {
 
         scanner.close();
 
-     
+        
         if (firstNumber < secondNumber) {
             for (int i = firstNumber + 1; i < secondNumber; i++) {
-                System.out.println(i);
+                if (i % 2 == 0) {
+                    System.out.println(i);
+                }
             }
         } else {
             System.out.println("Invalid input. The first number should be less than the second number.");
